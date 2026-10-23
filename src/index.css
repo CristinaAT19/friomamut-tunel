@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Colores tomados del PDF de Friomamut. Se usan como bg-azul, text-verde, stroke-menta… */
+@theme {
+  --color-azul: #0a1e64;
+  --color-azul-medio: #606d9a;
+  --color-azul-claro: #c9cfe3;
+  --color-verde: #1d7a68;
+  --color-menta: #4bbda7;
+  --color-menta-claro: #e0f5ef;
+  --color-menta-elegida: #f0f8f6;
+  --color-fondo: #f5f6f8;
+  --color-gris: #eef0f6;
+  --color-borde: #e2e4e8;
+  --color-rojo: #a3361a;
+  --color-rojo-claro: #fbe7e1;
+  --color-naranja: #8a4b08;
+  --color-naranja-claro: #fdf0dc;
+  --color-lila: #213373;
+  --color-lila-claro: #e4e8f4;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-titulo: 'Fira Sans Condensed', Inter, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-fondo text-azul font-sans tabular-nums;
+  }
+  button:focus-visible {
+    @apply outline-3 outline-offset-2 outline-menta;
+  }
+}
